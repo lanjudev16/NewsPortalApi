@@ -45,8 +45,52 @@
         <span id="categoryCount">4</span> items found for category <span id="categoryName">entertainment</span>
       </div>
     </div>
+    <!-- sorting option section start  -->
+    <section class="container d-flex justify-content-between align-items-center" id="">
+      <div class="d-flex">
+        <span>Sort by:</span>
+        <div>
+          <select class=" form-select" id="selectId">
+            <option selected value="time">time</option>
+            <option value="one">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <p id="showValue"></p>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-primary" onclick="selectIdShow()">Today pick</button>
+        <button class="btn btn-outline-secondary">Trending</button>
+      </div>
+    </section>
+    <!-- sorting option section end -->
+    <!-- all news -->
+    <section class="all-news container my-3" id="all-news">
+    </section>
+    <!-- all news end -->
+    <!-- modal start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog  ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalBodyId">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
   </main>
   <!-- main section ends -->
+
   <!-- Bootstrap script goes here -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
